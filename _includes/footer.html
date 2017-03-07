@@ -1,0 +1,90 @@
+<footer id="footer">
+	<div class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-3 col-lg-3">
+					<h3>Menu 1</h3>
+					<ul>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-lg-3">
+					<h3>Menu 2</h3>
+					<ul>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+						
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-lg-3">
+					<h3>Menu 3</h3>
+					<ul>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-lg-3">
+					<h3>Menu 4</h3>
+					<ul>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+						<li><a href="#">This is link 2</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>		
+	<div class="footer-copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-lg-6 copyright-mobile">
+					<p>LOGO. All Rights Reserved</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-lg-6  footer-socials">
+					<ul>
+						<li class="fb-item"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>								
+						<li class="twitter-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="pint-item"><a href="#"><i class="fa fa-instagram"></i></a></li>	
+						<li class="likedin-item"><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>								
+						<li class="youtube-item"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+						<li class="google-plus-item"><a href=""></a></li>
+						<li class="int-item"><a href=""></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+	<script>
+		jQuery(document).ready(function($){
+			$('.header-wrap').removeClass('scrolled');
+			 var lastScrollTop = 0, delta = 5;
+			$(window).scroll(function(){
+				var st = $(this).scrollTop();
+				if (st > 100)
+				{
+					$('.header-wrap').addClass('scrolled');
+				}
+				else 
+				{
+					$('.header-wrap').removeClass('scrolled');
+				}
+			});
+			$('.toggle-nav').click(function(){
+				
+				jQuery('.main-menu').stop(true,true).slideToggle(400,"easeOutCubic");
+			});
+		});
+	</script>
+	</body>
+</html>
