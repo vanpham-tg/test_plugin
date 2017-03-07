@@ -1,4 +1,4 @@
 name: Gainswave Jekyll Theme
 description: Customs template for Jekyll
 paginate: 10
-baseurl: '/gainswave-jekyll'
+baseurl: '/gh-pages'
