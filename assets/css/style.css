@@ -21,6 +21,10 @@ body
 /*
 	** HEADER
 */
+header.header-wrap
+{
+	box-shadow: 0px 2px 15px -1px #000;
+}
 .header-top
 {
 	background:#f1f1f1;
@@ -84,7 +88,8 @@ body
 .nav li.btn-appointment
 {
 	border:1px solid #006ca5;
-	padding:15px 10px;
+	padding:15px 10px; 
+	float:right;
 }
 .nav li.btn-appointment a
 {
@@ -604,6 +609,10 @@ body
 	  width:100%;
 	  padding:15px 20px;
   }
+  .wrap-content
+  {
+	  padding-top:40px;
+  }
 /*
 	**FOOTER BOX
 */
@@ -666,6 +675,13 @@ body
 	font-size:20px;
 	color:#656565;
 }
+@media (max-width:480px)
+{
+	.featured-6 h1
+	{
+	     font-size:34px;	
+	}
+}
 @media (max-width:767px)
 {
 	.header-nav .nav .main-nav
@@ -713,6 +729,16 @@ body
 	.item-video
 	{
 		margin-bottom:20px;
+		text-align:center;
+	}
+	.box-content
+	{
+	    text-align:center;
+            margin-bottom:25px;
+	}
+	.featured-img
+	{
+		text-align:center;
 	}
 	.featured-5 .featured-img
 	{
@@ -726,9 +752,23 @@ body
 	.featured-6-location
 	{
 		margin-bottom:50px;
+		text-align:center;
+		padding-right:15px;
+	}
+	.featured-6-form
+	{
+		padding-left:15px;
+	}
+	.copyright-mobile
+	{
+		margin-bottom:20px;
+	}
+	.footer-socials, .copyright-mobile
+	{
+		text-align:center;
 	}
 }
-@media (min-width:768px) and (max-width:800px)
+@media (min-width:768px) and (max-width:999px)
 {
 	.header-nav  .header-logo
 	{
@@ -754,6 +794,7 @@ body
 	.nav li.btn-appointment a
 	{
 		padding:0px;
+		font-size:13px;
 	}
 	.slidershow
 	{
