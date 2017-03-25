@@ -58,10 +58,22 @@ header.header-wrap
 .header-nav  .header-logo
 {
 	padding:10px 15px;
+	position:relative;
+}
+.logo-slogan
+{
+	position: absolute;
+    bottom: 13px;
+    font-size: 11px;
+    right: 28px;
+}
+.logo-slogan strong
+{
+	color:#fe0000;
 }
 .header-logo img
 {
-	height:60px;
+	height:70px;
 }
 .header-nav .nav
 {
@@ -82,7 +94,7 @@ header.header-wrap
 {
 	display:inline-block;
 	position:relative;
-	padding:20px 35px;
+	padding:20px 30px;
 	float:left;
 }
 .nav li.btn-appointment
@@ -527,10 +539,19 @@ header.header-wrap
 	margin-bottom:20px;
 	font-weight:700;
 }
+.contact-info
+{
+	padding:0px;
+}
+.contact-info li
+{
+	list-style:none;
+}
 .contact-info  .contact-phone
 {
-	font-size:27px;
+	font-size:26px;
 	margin:30px 0px;
+	font-weight:bold;
 }
 .contact-info i{
 	padding: 5px 6px;
@@ -655,6 +676,10 @@ header.header-wrap
 {
 	margin:0px;
 }
+.footer-copyright .logo-footer
+{
+	height:30px;
+}
 .footer-socials 
 {
 	text-align:right;
@@ -675,15 +700,64 @@ header.header-wrap
 	font-size:20px;
 	color:#656565;
 }
+.featured-quote
+{
+	background:#f1f1f1;
+	padding:50px 0px;
+}
+.slider1 
+{
+	text-align:center;
+	font-style:italic;
+	line-height:1.5em;
+}
+.slider1  span
+{
+	font-weight:bold;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active
+{
+	background:#006ca5 !important;
+}
+.widget-item
+{
+	margin-bottom:25px;
+}
+.sidebar-right h3
+{
+	padding-bottom:2px;
+	border-bottom:1px solid #006ca5;
+	margin-bottom:20px;
+}
+.sidebar-right ul
+{
+	padding:0px;
+	margin:0px;
+}
+.sidebar-right ul, .sidebar-right li
+{
+	list-style:none;
+}
 @media (max-width:480px)
 {
 	.featured-6 h1
 	{
 	     font-size:34px;	
 	}
+	.logo-slogan
+	{
+		bottom:17px !important;
+		left:80px !important;
+		font-size:8px;
+	}
 }
 @media (max-width:767px)
 {
+	.logo-slogan
+	{
+		left:90px;
+		right:initial;
+	}
 	.header-nav .nav .main-nav
 	{
 		display:none;
@@ -776,15 +850,21 @@ header.header-wrap
 	}
 	.header-logo img
 	{
-		height:35px;
+		height:40px;
+	}
+	.logo-slogan
+	{
+		bottom: 20px;
+		font-size: 7px;
+		right: 25px;
 	}
 	.nav li
 	{
-		padding:11px 14px;
+		padding:11px 10px;
 	}
 	.nav li a
 	{
-		font-size:13px;
+		font-size:12px;
 		
 	}
 	.nav li.btn-appointment
@@ -794,7 +874,7 @@ header.header-wrap
 	.nav li.btn-appointment a
 	{
 		padding:0px;
-		font-size:13px;
+		font-size:12px;
 	}
 	.slidershow
 	{
@@ -812,13 +892,19 @@ header.header-wrap
 	{
 		height:50px;
 	}
+	.logo-slogan
+	{
+		bottom:22px;
+		font-size:8px;
+		right:50px;
+	}
 	.nav li
 	{
-		padding:20px 22px;
+		padding:20px 18px;
 	}
 	.nav li.btn-appointment a
 	{
-		padding:0px 15px;
+		padding:0px;
 	}
 	.featured-1-img img
 	{
@@ -871,4 +957,19 @@ header.header-wrap
 	{
 		height:80px;
 	}
+}
+p.slogan {
+    font-size: 22px;
+    padding: 20px 0;
+    font-style: italic;
+}
+.col-xs-12.col-sm-3.col-lg-4.logobox{
+    background: #f6f6f8;
+    padding: 39px 19px 19px 19px;
+    text-align: center;
+    margin-right: 21px;
+}
+.col-xs-12.col-sm-3.col-lg-3.sidebar-right {
+    padding: 29px;
+    background: #f1f1f1;
 }
