@@ -10,8 +10,10 @@
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/jquery.bxslider.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/jquery.bxslider.js"></script>
 		<script>
 			$(document).ready(function(){
 				//$('.nav-bar').addClass('active');
@@ -29,6 +31,15 @@
 					$(this).hasClass("active")?($(this).removeClass("active"),e.slideUp()):($(this).addClass("active"),e.slideDown());
 				});
 			});
+			/* SLIDER QUOTE ON HOME */
+			$(document).ready(function(){
+			  $('.slider1').bxSlider({
+				slideWidth: 1170,
+				minSlides: 1,
+				maxSlides: 1,
+				slideMargin: 0
+			  });
+			});
 		</script>
 	</head>
 
@@ -40,9 +51,7 @@
 					<div class="row">
 						<div class="col-md-12 header-top-content">
 							<ul>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#"><strong>1 (800) 324 - 2344</strong></a></li>
+								<li><strong>Speak to a Medical Adviser:</strong> <a href="tel:8003251325"><strong>(800) 325-1325</strong></a></li>
 							</ul>
 						</div>
 					</div>
@@ -52,18 +61,25 @@
 				<div class="row">
 				<div class="header-nav">
 					<div class="col-xs-6 col-sm-2 col-lg-2 header-logo">
-						<img src="{{ site.baseurl }}/assets/images/logo.png" alt="GainsWave">
+						<a href="/"><img src="{{ site.baseurl }}/assets/images/logo.png" alt="GainsWave"></a>
 					</div>
 					<div class="col-xs-6 col-sm-10 col-lg-10 header-right">
 						<div class="col-xs-12 col-sm-12 col-lg-12 nav">
 							<a href="#" class="toggle-nav"><i class="fa fa-bars" aria-hidden="true"></i></a>
 							<ul class="main-nav">
 								<li><a href="#">About Us</a></li>
-								<li><a href="#">What is GainsWave?</a>
-									
+								<li><a href="/what-is-gainswave.html">What is GainsWave?</a>
+									<ul class="sub-menu">
+										<li><a href="/the-procedure.html">The Procedure</a></li>
+										<li><a href="/erectile-dysfunction-doctor-in-miami.html">Erectile Dysfunction Doctor in Miami</a></li>
+										<li><a href="/erectile-dysfunction-treatment.html">Erectile Dysfunction Treatment</a></li>
+										<li><a href="/peyronie-disease-treatment.html">Peyronie Disease Treatment</a></li>
+										<li><a href="/peyronie-disease-treatment-in-miami">Peyronie Disease Treatment in Miami</a></li>
+										<li><a href="/sexual-performance-and-maintenance.html">Sexual Performance and Maintenance</a></li>
+									</ul>
 								</li>
 								<li><a href="#">Testimonials</a></li>
-								<li><a href="#">FAQs</a></li>
+								<li><a href="/faqs.html">FAQs</a></li>
 								<li class="btn btn-appointment"><a href="#">Request An Appointment</a></li>
 							</ul>
 						</div>
@@ -81,22 +97,24 @@
 					<div class="nav-content-scroll" style="height:160px;">
 					<ul class="nav-bar-list">
 						<li><a href="#">About Us</a></li>
-						<li class="parent"><a href="#">What is GainsWave?</a>
+						<li class="parent"><a href="/what-is-gainswave.html">What is GainsWave?</a>
 							<ul class="sub-menu">
-								<li><a href="">sub item 1</a></li>
-								<li><a href="">sub item 1</a></li>
-								<li><a href="">sub item 1</a></li>
-								<li><a href="">sub item 1</a></li>
+								<li><a href="/the-procedure.html">The Procedure</a></li>
+								<li><a href="/erectile-dysfunction-doctor-in-miami.html">Erectile Dysfunction Doctor in Miami</a></li>
+								<li><a href="/erectile-dysfunction-treatment.html">Erectile Dysfunction Treatment</a></li>
+								<li><a href="/peyronie-disease-treatment.html">Peyronie Disease Treatment</a></li>
+								<li><a href="/peyronie-disease-treatment-in-miami">Peyronie Disease Treatment in Miami</a></li>
+								<li><a href="/sexual-performance-and-maintenance.html">Sexual Performance and Maintenance</a></li>
 							</ul>
 						</li>
 						<li><a href="#">Testimonials</a></li>
-						<li><a href="#">FAQs</a></li>
+						<li><a href="/faqs.html">FAQs</a></li>
 						<li><a href="#">Request An Appointment</a></li>
 					</ul>
 					</div>
 				</div>
 				<div class="nav-bar-other">
-					<p>1 (800) 324 - 2344</p>
+					<p>(800) 325-1325</p>
 				</div>
 			</div>
 		</header>
