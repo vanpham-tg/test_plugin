@@ -975,3 +975,16 @@ p.slogan {
     padding: 29px;
     background: #f1f1f1;
 }
+.entry-page blockquote
+{
+	    padding-left: 25px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border: 3px solid #d8d8d8;
+    border-left: 30px solid #fcaf2c;
+}
+.entry-page blockquote a:hover
+{
+	text-decoration:none;
+}
