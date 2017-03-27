@@ -66,6 +66,8 @@ header.header-wrap
     bottom: 13px;
     font-size: 11px;
     right: 28px;
+	color:#333;
+	text-decoration:none;
 }
 .logo-slogan strong
 {
@@ -128,11 +130,11 @@ header.header-wrap
 {
 	display:none;
 	background:#000;
-	max-width:200px;
+	max-width:300px;
 	position:absolute;
 	top:60px;
 	left:20px;
-	
+	z-index:99;
 }
 .nav li:hover ul
 {
@@ -149,7 +151,7 @@ header.header-wrap
 .nav li ul li a
 {
 	color:#fff;
-	
+	text-transform:capitalize;
 }
 /*
 	NAV BAR
