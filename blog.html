@@ -1,11 +1,12 @@
 ---
 title: Blog
 layout: page-blog
+permalink:/blog/
 ---
 {% for post in site.posts %}
 <div class="post-item">
 	<div class="featured-img">
-		<a href="{{ post.url }}"><img src=""></a>
+		<a href="{{ post.url }}"><img src="{{ post.image }}"></a>
 	</div>
 	<div class="post-content">
 		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
