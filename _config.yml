@@ -4,7 +4,7 @@ paginate: 10
 baseurl: '/test_plugin'
 url: 'https://vanpham-tg.github.io/test_plugin'
 
-permalink: /blog/:title/
+permalink: pretty
 
 responsive_image:
   # [Required]
