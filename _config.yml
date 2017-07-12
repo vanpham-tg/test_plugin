@@ -1,7 +1,7 @@
 name: Gainswave Jekyll Theme
 description: Customs template for Jekyll
 paginate: 10
-baseurl: '/gh-pages'
+baseurl: '/test_plugin'
 
 permalink: /blog/:title/
 
